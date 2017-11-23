@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  src: url("assets/fonts/Source Sans Pro/Extra-Light/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Extra-Light/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Extra-Light/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Extra-Light/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Extra-Light/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 200;
+  src: url("assets/fonts/Source Sans Pro/Extra-Light/Italic/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Extra-Light/Italic/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Extra-Light/Italic/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Extra-Light/Italic/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Extra-Light/Italic/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/Source Sans Pro/Light/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Light/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Light/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Light/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Light/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 300;
+  src: url("assets/fonts/Source Sans Pro/Light/Italic/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Light/Italic/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Light/Italic/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Light/Italic/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Light/Italic/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Source Sans Pro/Regular/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Regular/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Regular/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Regular/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Regular/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: normal;
+  src: url("assets/fonts/Source Sans Pro/Regular/Italic/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Regular/Italic/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Regular/Italic/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Regular/Italic/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Regular/Italic/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/Source Sans Pro/Semi-Bold/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Semi-Bold/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Semi-Bold/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Semi-Bold/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Semi-Bold/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 600;
+  src: url("assets/fonts/Source Sans Pro/Semi-Bold/Italic/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Semi-Bold/Italic/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Semi-Bold/Italic/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Semi-Bold/Italic/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Semi-Bold/Italic/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  src: url("assets/fonts/Source Sans Pro/Bold/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Bold/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Bold/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Bold/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Bold/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: bold;
+  src: url("assets/fonts/Source Sans Pro/Bold/Italic/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Bold/Italic/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Bold/Italic/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Bold/Italic/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Bold/Italic/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets/fonts/Source Sans Pro/Black/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Black/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Black/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Black/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Black/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 900;
+  src: url("assets/fonts/Source Sans Pro/Black/Italic/Source Sans Pro.eot?") format("eot"), url("assets/fonts/Source Sans Pro/Black/Italic/Source Sans Pro.woff2") format("woff2"), url("assets/fonts/Source Sans Pro/Black/Italic/Source Sans Pro.woff") format("woff"), url("assets/fonts/Source Sans Pro/Black/Italic/Source Sans Pro.ttf") format("truetype"), url("assets/fonts/Source Sans Pro/Black/Italic/Source Sans Pro.svg#Source_Sans_Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Bebas Neue/Bebas Neue.eot?") format("eot"), url("assets/fonts/Bebas Neue/Bebas Neue.woff2") format("woff2"), url("assets/fonts/Bebas Neue/Bebas Neue.woff") format("woff"), url("assets/fonts/Bebas Neue/Bebas Neue.ttf") format("truetype"), url("assets/fonts/Bebas Neue/Bebas Neue.svg#Bebas_Neue") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #292929;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #fef5f5;
+  font-family: 'Source Sans Pro';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, textarea, button, .button, .input {
+  height: 35px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+input:focus, textarea:focus, button:focus, .button:focus, .input:focus {
+  outline: none;
+}
+
+button, .button {
+  background-color: white;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+button:hover, .button:hover {
+  background-color: #ededed;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 37px;
+}
+
+.noselect {
+  user-select: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.triggered {
+  visibility: visible;
+}
+
+#subMenu {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  background-color: #991C1C;
+}
+
+#subMenu a {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  color: white;
+  background-color: #991C1C;
+  -moz-transition: background-color 150ms ease-in-out;
+  -o-transition: background-color 150ms ease-in-out;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+#subMenu a.active {
+  background-color: #831818;
+}
+
+#subMenu a.active:hover {
+  background-color: #831818;
+}
+
+#subMenu a:hover {
+  background-color: #8c1a1a;
+}
+
+#subMenu span {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+#subMenu span fa {
+  position: relative;
+}
+
+#subMenu span fa i {
+  color: white;
+}
+
+#subMenu span .full-heart {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 16px;
+  width: 16px;
+}
+
+#subMenu span .full-heart i {
+  font-size: 0px;
+  -moz-transition: font-size 200ms linear;
+  -o-transition: font-size 200ms linear;
+  -webkit-transition: font-size 200ms linear;
+  transition: font-size 200ms linear;
+}
+
+#subMenu span .loved i {
+  font-size: 16px;
+}
+
+#subMenu span:hover fa + .full-heart i {
+  font-size: 16px;
+}
+ 
+
+ /*# sourceMappingURL= styles.css.map */

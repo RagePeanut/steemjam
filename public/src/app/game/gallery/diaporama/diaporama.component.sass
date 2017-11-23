@@ -1,0 +1,30 @@
+@import "../../../../_mixins.scss"
+@import "../../../../_variables.sass"
+#diaporama
+    position: fixed
+    top: 0
+    left: 0
+    @include flex(row, center, center)
+    height: 100%
+    width: 100%
+    z-index: 2
+    img
+        max-height: 90%
+        max-width: 90%
+    a
+        @include flex(row, center, center)
+        height: 50px
+        width: 50px
+        font-size: 1.4rem
+        &::ng-deep
+            fa
+                i
+                    color: $white
+    #background
+        position: fixed
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: -1
+        background-color: transparentize($black, 0.2)

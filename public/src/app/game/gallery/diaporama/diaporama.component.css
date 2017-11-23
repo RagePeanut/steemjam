@@ -1,0 +1,72 @@
+#diaporama {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+#diaporama img {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+#diaporama a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  font-size: 1.4rem;
+}
+
+#diaporama a::ng-deep fa i {
+  color: white;
+}
+
+#diaporama #background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(41, 41, 41, 0.8);
+}
+ 
+
+ /*# sourceMappingURL= diaporama.component.css.map */

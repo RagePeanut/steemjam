@@ -1,0 +1,19 @@
+@import "../../../_mixins.scss"
+@import "../../../_variables.sass"
+#tags
+    @include flex(row, space-between, flex-start)
+    padding: 0 20px 10px
+    a
+        span
+            padding: 4px
+            font-size: 12px
+            background-color: lightgrey
+            text-transform: uppercase
+    #genres
+        a
+            span
+                margin-right: 5px
+#content
+    padding-bottom: 15px
+    margin: 0 20px
+    @import "../../../_markdown.sass"

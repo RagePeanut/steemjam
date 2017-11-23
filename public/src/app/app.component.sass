@@ -1,0 +1,122 @@
+@import "../_mixins.scss"
+@import "../_variables.sass"
+
+header
+    position: fixed
+    @include flex(row, space-between, center)
+    height: 60px
+    width: 100%
+    background-color: $white
+    box-shadow: 0px 0px 0px 1px lightgrey
+    z-index: 1
+    .logoandsearch
+        @include flex(row, flex-start, center)
+        height: 100%
+        background-color: $white
+        form
+            @include flex(row, center, center)
+            border: 1px solid lightgrey
+            border-radius: 5px
+            input
+                border: none
+                border-radius: 5px 0 0 5px
+            button
+                border: none
+                border-left: thin solid lightgrey
+                border-radius: 0 5px 5px 0
+                &::ng-deep
+                    fa i
+                        color: grey
+        a
+            height: 48px
+            // Search box starts at the same position as main
+            // 100vw - main normal width which is 1180px
+            // Divided by two to have the width of the one side only
+            // Subtracting 20px for the margin and 8px for the width of the scrollbar
+            width: calc((((100vw) - 1180px) / 2) - 28px)
+            // If main is less than 1180px, search box will stop following it
+            min-width: 48px
+            margin: 0 10px
+            .logo g path
+                fill: $red
+                &:last-child
+                    fill: $logo-middle
+    #triggersWrapper
+        @include flex(row, space-between, center)
+        height: 100%
+        a
+            padding: 20px 10px
+            background-color: $white
+            white-space: nowrap
+            @include transition(background-color 300ms ease-in-out)
+            &:hover
+                background-color: $white-hover
+        #dropdownTrigger
+            position: relative
+            @include flex(row, center, center)
+            height: 100%
+            padding: 0 10px
+            background-color: $white
+            cursor: pointer
+            @include transition(background-color 300ms ease-in-out)
+            p
+                padding: 5px
+                span
+                    @include transition(color 300ms ease-in-out)
+            img
+                height: 65%
+                border-radius: 90px
+            #dropdown
+                position: absolute
+                top: 60px
+                right: 0px
+                @include flex(column, center, flex-start)
+                width: calc(100%)
+                border-top: 1px solid lightgrey
+                border-radius: 0 0 2px 2px
+                box-sizing: border-box
+                box-shadow: 0px 0px 5px grey
+                overflow: hidden
+                visibility: hidden
+                z-index: -1
+                a
+                    width: 100%
+                    padding: 0
+                    background-color: $white
+                    text-align: right
+                    @include transition(background-color 300ms ease-in-out)
+                    p
+                        margin: 5px
+                        @include transition(color 300ms ease-in-out)
+                        &::ng-deep
+                            fa
+                                float: left
+                                i
+                                    width: 16px
+                                    text-align: center
+                                    @include transition(color 300ms ease-in-out)
+                    &:hover
+                        background-color: $white-hover
+                        p
+                            color: darkred
+                            &::ng-deep
+                                fa 
+                                    i
+                                        color: darkred
+                &.triggered
+                    visibility: visible
+            &:hover
+                background-color: $white-hover
+                p span
+                    color: darkred
+    .button
+        margin-right: 10px
+
+
+main
+    position: relative
+    top: 60px
+    max-width: 1180px
+    margin: 0 auto
+    background-color: $white
+    box-shadow: 0px 0px 10px lightgrey

@@ -1,0 +1,23 @@
+<div>
+</div>
+<div class="post">
+  <h1>{{ post.root_title }}</h1>
+  <div
+    class="content"
+    (click)="onExpand()"
+    [ngClass]="isExpanded ? 'expanded' : ''"
+    [innerHtml]="postBody"></div>
+  <div class="interactions">
+    <a>{{ post.net_votes }} Likes</a><a 
+      (click)="onCommentsTriggered()"
+      >{{ post.children }} Comments</a><a
+      >Share</a>
+  </div>
+  <div
+    *ngIf="isCommentsTriggered"
+    class="comments">
+    <app-reply
+      *ngFor="let reply of post.replies"
+      [reply]="reply"></app-reply>
+  </div>
+</div>

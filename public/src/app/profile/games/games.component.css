@@ -1,0 +1,88 @@
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+
+.games .game {
+  position: relative;
+  width: calc(calc(100% / 3) - 5px);
+  margin-bottom: 10px;
+}
+
+.games .game a img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.games .game .details {
+  display: none;
+  position: absolute;
+  width: 100%;
+  font-family: 'Source Sans Pro';
+  z-index: 1;
+}
+
+.games .game .details .inner {
+  padding: 10px;
+  background-color: #991C1C;
+  border-radius: 3px;
+}
+
+.games .game .details .inner h3, .games .game .details .inner .description {
+  color: white;
+}
+
+.games .game .details .inner .description {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.games .game .details .inner .other {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+  width: 45%;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.games .game .details .inner .other p {
+  color: #292929;
+}
+
+.games .game .details .inner .other p a {
+  color: darkred;
+}
+
+.games .game .details .arrow {
+  height: 0;
+  width: 0;
+  margin: 3px auto 0 auto;
+  border-style: solid;
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent #991C1C transparent;
+}
+
+.games .game:hover .details {
+  display: block;
+}
+
+@media screen and (max-width: 900px) {
+  .games .game {
+    width: calc(50% - 5px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .games .game {
+    width: 100%;
+  }
+}
+ 
+
+ /*# sourceMappingURL= games.component.css.map */

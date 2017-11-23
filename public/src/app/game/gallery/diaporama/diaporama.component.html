@@ -1,0 +1,17 @@
+<div id="diaporama" class="noselect">
+  <a (click)="onSwitchImage(-1)">
+    <fa
+      name="chevron-left"
+      size="lg"></fa>
+  </a>
+  <img 
+    src="{{ gallery[clickedImageIndex] }}" 
+    alt="Image {{ clickedImageIndex }}">
+  <a (click)="onSwitchImage(1)">
+    <fa
+      name="chevron-right"
+      size="lg"></fa>
+  </a>
+  <div id="background"
+    (click)="onClose()"></div>
+</div>

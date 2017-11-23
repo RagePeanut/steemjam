@@ -1,0 +1,18 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Keyboard</th>
+                <th>Gamepad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let control of gameService.game.meta.controls">
+                <td>{{ control.action }}</td>
+                <td>{{ control.keyboard }}</td>
+                <td>{{ control.gamepad }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

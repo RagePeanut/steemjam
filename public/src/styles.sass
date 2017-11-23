@@ -1,0 +1,95 @@
+@import "_mixins.scss"
+@import "_variables.sass"
+@import "_fonts.sass"
+
+*
+    margin: 0
+    padding: 0
+    color: $black
+
+html
+    overflow-y: scroll
+
+body
+    background-color: $body
+    font-family: 'Source Sans Pro'
+
+a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+ul
+    list-style-type: none
+input, textarea, button, .button, .input
+    height: 35px
+    padding: 10px
+    border: 1px solid lightgrey
+    border-radius: 5px
+    box-sizing: border-box
+    background-color: $button
+    &:focus
+        outline: none
+button, .button
+    background-color: $button
+    @include transition(background-color 200ms ease-in-out)
+    &:hover
+        background-color: $button-hover
+button
+    cursor: pointer
+.button
+    @include flex(row, center, center)
+    height: 37px
+.noselect
+    user-select: none
+.nowrap
+    white-space: nowrap
+.triggered
+    visibility: visible
+
+#subMenu
+    position: relative
+    margin-bottom: 15px
+    padding: 0 20px
+    background-color: $red
+    a
+        display: inline-block
+        height: 40px
+        padding: 0 10px
+        line-height: 40px
+        color: $white
+        background-color: $red
+        @include transition(background-color 150ms ease-in-out)
+        &.active
+            background-color: $red-active
+            &:hover
+                background-color: $red-active
+        &:hover
+            background-color: $red-hover
+    span
+        position: absolute
+        right: 20px
+        top: 10px
+        color: $white
+        cursor: pointer
+        fa
+            position: relative
+            i
+                color: $white
+        .full-heart
+            position: absolute
+            top: 2px
+            right: 0
+            @include flex(row, center, center)
+            height: 16px
+            width: 16px
+            i
+                font-size: 0px
+                @include transition(font-size 200ms linear)
+        .loved
+            i
+                font-size: 16px
+        &:hover
+            fa
+                &+.full-heart
+                    i
+                        font-size: 16px

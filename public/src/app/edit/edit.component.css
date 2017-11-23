@@ -1,0 +1,24 @@
+div {
+  padding: 20px;
+}
+
+div nav {
+  margin-bottom: 15px;
+}
+
+div nav ul li {
+  display: inline;
+}
+
+div nav ul li a {
+  padding: 5px;
+  border: 1px solid #991C1C;
+}
+
+div nav ul li .active {
+  background-color: #991C1C;
+  color: white;
+}
+ 
+
+ /*# sourceMappingURL= edit.component.css.map */

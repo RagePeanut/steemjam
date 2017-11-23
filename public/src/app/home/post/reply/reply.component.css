@@ -1,0 +1,205 @@
+.reply {
+  position: relative;
+  min-height: 58px;
+}
+
+.reply app-reply {
+  position: absolute;
+  left: 68px;
+}
+
+.reply div {
+  margin: 0 10px 0 68px;
+  overflow: hidden;
+}
+
+.reply div a {
+  font-weight: bold;
+}
+
+.reply div .content {
+  margin: 0;
+}
+
+.reply div .content::ng-deep {
+  font-size: 1.1rem;
+}
+
+.reply div .content::ng-deep p, .reply div .content::ng-deep ul, .reply div .content::ng-deep ol, .reply div .content::ng-deep hr, .reply div .content::ng-deep table {
+  margin-bottom: 1.1rem;
+}
+
+.reply div .content::ng-deep p:last-child, .reply div .content::ng-deep ul:last-child, .reply div .content::ng-deep ol:last-child, .reply div .content::ng-deep hr:last-child, .reply div .content::ng-deep table:last-child {
+  margin-bottom: 0;
+}
+
+.reply div .content::ng-deep img, .reply div .content::ng-deep h1, .reply div .content::ng-deep h2, .reply div .content::ng-deep h3, .reply div .content::ng-deep h4, .reply div .content::ng-deep h5, .reply div .content::ng-deep h6 {
+  margin-bottom: 5px;
+}
+
+.reply div .content::ng-deep img:first-child, .reply div .content::ng-deep h1:first-child, .reply div .content::ng-deep h2:first-child, .reply div .content::ng-deep h3:first-child, .reply div .content::ng-deep h4:first-child, .reply div .content::ng-deep h5:first-child, .reply div .content::ng-deep h6:first-child {
+  margin-top: 0;
+}
+
+.reply div .content::ng-deep img:last-child, .reply div .content::ng-deep h1:last-child, .reply div .content::ng-deep h2:last-child, .reply div .content::ng-deep h3:last-child, .reply div .content::ng-deep h4:last-child, .reply div .content::ng-deep h5:last-child, .reply div .content::ng-deep h6:last-child {
+  margin-bottom: 0;
+}
+
+.reply div .content::ng-deep h1 img, .reply div .content::ng-deep h2 img, .reply div .content::ng-deep h3 img, .reply div .content::ng-deep h4 img, .reply div .content::ng-deep h5 img, .reply div .content::ng-deep h6 img {
+  vertical-align: middle;
+}
+
+.reply div .content::ng-deep p + ol, .reply div .content::ng-deep p + ul {
+  margin-top: -1.1rem;
+}
+
+.reply div .content::ng-deep p + br + div {
+  margin-top: -1.1rem;
+}
+
+.reply div .content::ng-deep strong {
+  font-weight: 600;
+}
+
+.reply div .content::ng-deep ul, .reply div .content::ng-deep ol {
+  margin-left: 1.2rem;
+  list-style-position: outside;
+}
+
+.reply div .content::ng-deep ol {
+  list-style-type: decimal;
+}
+
+.reply div .content::ng-deep ul {
+  list-style-type: disc;
+}
+
+.reply div .content::ng-deep center {
+  text-align: center;
+}
+
+.reply div .content::ng-deep img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.reply div .content::ng-deep a {
+  color: #991C1C;
+}
+
+.reply div .content::ng-deep hr {
+  margin: 1.1rem 10%;
+  border: none;
+  border-bottom: thin solid #991C1C;
+}
+
+.reply div .content::ng-deep h1 {
+  margin-top: 2.75rem;
+  font-size: 160%;
+}
+
+.reply div .content::ng-deep h2 {
+  margin-top: 2.2rem;
+  font-size: 145%;
+}
+
+.reply div .content::ng-deep h3 {
+  margin-top: 1.9rem;
+  font-size: 130%;
+}
+
+.reply div .content::ng-deep h4 {
+  margin-top: 1.65rem;
+  font-size: 120%;
+}
+
+.reply div .content::ng-deep h5 {
+  margin-top: 1.35rem;
+  font-size: 110%;
+}
+
+.reply div .content::ng-deep h6 {
+  margin-top: 1.1rem;
+  font-size: 100%;
+}
+
+.reply div .content::ng-deep table {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px lightgrey;
+}
+
+.reply div .content::ng-deep table thead {
+  background-color: #831818;
+}
+
+.reply div .content::ng-deep table thead tr {
+  border: thin solid #831818;
+}
+
+.reply div .content::ng-deep table thead tr th {
+  font-weight: normal;
+  color: white;
+}
+
+.reply div .content::ng-deep table thead tr th center {
+  color: white;
+}
+
+.reply div .content::ng-deep table tbody tr {
+  border: thin solid lightgrey;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.reply div .content::ng-deep table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.reply div .content::ng-deep table td, .reply div .content::ng-deep table th {
+  padding: 10px;
+}
+
+.reply div .content::ng-deep table td img, .reply div .content::ng-deep table th img {
+  vertical-align: middle;
+}
+
+.reply div .content::ng-deep pre {
+  width: 100%;
+  margin: 0.8rem 0;
+}
+
+.reply div .content::ng-deep pre code {
+  display: block;
+}
+
+.reply div .content::ng-deep code {
+  padding: 3px;
+  background-color: #fef5f5;
+  font-size: 115%;
+}
+
+.reply div .content::ng-deep .text-justify {
+  text-align: justify;
+}
+
+.reply div .content::ng-deep .pull-left {
+  float: left;
+}
+
+.reply div .content::ng-deep .pull-right {
+  float: right;
+}
+
+.reply .profilePicture {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 1px lightgrey;
+}
+ 
+
+ /*# sourceMappingURL= reply.component.css.map */

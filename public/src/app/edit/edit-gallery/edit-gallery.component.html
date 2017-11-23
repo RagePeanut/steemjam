@@ -1,0 +1,16 @@
+<div id="new-image">
+  <input
+    type="text"
+    placeholder="Paste an image url here..."
+    value="{{ text }}"
+    (change)="text = $event.target.value">
+  <button
+    (click)="addImage()">
+    <fa name="plus"></fa>
+  </button>
+</div>
+<div id="gallery">
+  <img
+    *ngFor="let image of gallery"
+    src="{{ image }}">
+</div>

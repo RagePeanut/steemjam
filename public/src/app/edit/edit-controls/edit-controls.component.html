@@ -1,0 +1,47 @@
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Keyboard</th>
+      <th>Gamepad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <input
+          type="text"
+          placeholder="Action"
+          value="{{ action }}"
+          (change)="action = $event.target.value">
+      </td>
+      <td>
+        <input
+          type="text"
+          placeholder="Keyboard"
+          value="{{ keyboard }}"
+          (change)="keyboard = $event.target.value">
+      </td>
+      <td>
+        <input
+          type="text"
+          placeholder="Gamepad"
+          value="{{ gamepad }}"
+          (change)="gamepad = $event.target.value">
+        <button
+          (click)="onBindingsAdded()">Add</button>
+      </td>
+    </tr>
+    <tr *ngFor="let bindings of controls">
+      <td>
+        {{ bindings.action }}
+      </td>
+      <td>
+        {{ bindings.keyboard }}
+      </td>
+      <td>
+        {{ bindings.gamepad }}
+      </td>
+    </tr>
+  </tbody>
+</table>

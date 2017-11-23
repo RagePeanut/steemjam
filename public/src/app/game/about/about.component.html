@@ -1,0 +1,17 @@
+<div id="tags">
+    <div id="genres">
+        <a
+            *ngFor="let genre of gameService.game.meta.genres"
+            routerLink="/created/{{ genre }}">
+            <span>{{ genre }}</span>
+        </a>
+    </div>
+    <a
+        routerLink="/created/{{ gameService.game.meta.theme.hashtag }}"
+        id="theme">
+        <span>{{ gameService.game.meta.theme.name }}</span>
+    </a>
+</div>
+<div 
+    [innerHtml]="gameService.game.meta.about"
+    id="content"></div>

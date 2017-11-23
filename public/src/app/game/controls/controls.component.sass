@@ -1,0 +1,27 @@
+@import "../../../_variables.sass"
+
+div
+    padding: 0 20px 15px 20px
+    &::ng-deep
+        table
+            width: 100%
+            border-collapse: collapse
+            box-shadow: 0px 0px 5px lightgrey
+            thead
+                background-color: $red-active
+                tr
+                    border: thin solid $red-active
+                    th 
+                        width: 33.33%
+                        width: calc(100% / 3)
+                        font-weight: normal
+                        color: $white
+            tbody
+                tr
+                    border: thin solid lightgrey
+                    background-color: $white
+                    box-sizing: border-box
+                    &:hover
+                        background-color: $white-hover
+            td, th
+                padding: 10px

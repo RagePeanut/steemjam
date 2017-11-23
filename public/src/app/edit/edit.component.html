@@ -1,0 +1,24 @@
+<div [ngSwitch]="subpage">
+  <nav>
+    <ul>
+      <li>
+        <a 
+          (click)="switchPage('game')"
+          [ngClass]="subpage !== 'gallery' && subpage !== 'controls' ? 'active' : ''">Game</a>
+      </li>
+      <li>
+        <a
+          (click)="switchPage('gallery')"
+          [ngClass]="subpage === 'gallery' ? 'active' : ''">Gallery</a>
+      </li>
+      <li>
+        <a
+          (click)="switchPage('controls')"
+          [ngClass]="subpage === 'controls' ? 'active' : ''">Controls</a>
+      </li>
+    </ul>
+  </nav>
+  <app-edit-gallery *ngSwitchCase="'gallery'"></app-edit-gallery>
+  <app-edit-controls *ngSwitchCase="'controls'"></app-edit-controls>
+  <app-edit-game *ngSwitchDefault></app-edit-game>
+</div>

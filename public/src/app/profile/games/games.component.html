@@ -1,0 +1,48 @@
+<div class="games">
+  <div
+    *ngFor="let game of profileService.madeGames"  
+    class="game">
+    <a routerLink="{{ game.url }}">
+      <img
+        src="{{ game.meta.image[0] }}"
+        alt="{{ game.title }}">
+    </a>
+    <div class="details">
+      <div class="arrow"></div>
+      <div class="inner">
+        <div class="other">
+          <p>
+            <strong>Theme:</strong>
+            <br>
+            <a
+              routerLink="/created/{{ game.meta.theme.hashtag }}">
+              {{ game.meta.theme.name }}
+            </a>
+          </p>
+          <p>
+            <strong>Genres:</strong>
+            <br>
+            <a
+              *ngFor="let genre of game.meta.genres; let i = index"
+              routerLink="/created/{{ genre }}">
+              {{ genre }}<span *ngIf="i < game.meta.genres.length - 1">, </span>
+            </a>
+          </p>
+          <p>
+            <strong>Creators:</strong>
+            <br>
+            <a
+              *ngFor="let creator of game.beneficiaries; let i = index"
+              routerLink="/@{{ creator.account }}">
+              @{{ creator.account }}<span *ngIf="i < game.beneficiaries.length - 1">, </span>
+            </a>
+          </p>
+        </div>
+        <h3>{{ game.title }}</h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

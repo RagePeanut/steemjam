@@ -1,0 +1,104 @@
+&::ng-deep
+    font-size: 1.1rem
+    // Following tags try to mimic Steemit's ones behaviours
+    p, ul, ol, hr, table
+        margin-bottom: 1.1rem
+        // No margin-bottom on Steemit for :
+        // pre, code, strong, em, a, img, center, h1-6, div
+        // Still adding a bit on some of them for the aesthetic
+        &:last-child
+            margin-bottom: 0
+    img, h1, h2, h3, h4, h5, h6
+        margin-bottom: 5px
+        &:first-child
+            margin-top: 0
+        &:last-child
+            margin-bottom: 0
+    h1, h2, h3, h4, h5, h6
+        img
+            vertical-align: middle
+    p
+        &+ol,&+ul
+            margin-top: -1.1rem
+        &+br
+            &+div
+                margin-top: -1.1rem
+    strong
+        font-weight: 600
+    ul, ol
+        margin-left: 1.2rem
+        list-style-position: outside
+    ol
+        list-style-type: decimal
+    ul
+        list-style-type: disc
+    center
+        text-align: center
+    img
+        max-width: 100%
+        vertical-align: bottom
+    a
+        color: $red
+    hr
+        margin: 1.1rem 10%
+        border: none
+        border-bottom: thin solid $red
+    h1
+        margin-top: 2.75rem
+        font-size: 160%
+    h2
+        margin-top: 2.2rem
+        font-size: 145%
+    h3
+        margin-top: 1.9rem
+        font-size: 130%
+    h4
+        margin-top: 1.65rem
+        font-size: 120%
+    h5
+        margin-top: 1.35rem
+        font-size: 110%
+    h6
+        margin-top: 1.1rem
+        font-size: 100%
+    table
+        width: 90%
+        margin-right: auto
+        margin-left: auto
+        border-collapse: collapse
+        box-shadow: 0px 0px 5px lightgrey
+        thead
+            background-color: $red-active
+            tr
+                border: thin solid $red-active
+                th 
+                    font-weight: normal
+                    color: $white
+                    center
+                        color: $white
+        tbody
+            tr
+                border: thin solid lightgrey
+                background-color: $white
+                box-sizing: border-box
+                &:hover
+                    background-color: $white-hover
+        td, th
+            padding: 10px
+            img
+                vertical-align: middle
+    pre
+        width: 100%
+        margin: 0.8rem 0
+        code
+            display: block
+    code 
+        padding: 3px
+        background-color: $body
+        font-size: 115%
+    .text-justify
+        text-align: justify
+    .pull-left
+        float: left
+    .pull-right
+        float: right

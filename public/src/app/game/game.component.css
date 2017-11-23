@@ -1,0 +1,118 @@
+#header {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "vertical";
+  -moz-box-orient: "vertical";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+#header h1 {
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', fantasy;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#header #creators {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header #creators a {
+  height: 80px;
+  margin: 0 20px;
+  border-radius: 50%;
+}
+
+#header #creators a img {
+  border: thin solid lightgrey;
+  border-radius: 50%;
+}
+
+#header #viewOn {
+  right: 0px;
+  padding-right: 10px;
+}
+
+#header #downloadOn {
+  left: 0px;
+  padding-left: 10px;
+}
+
+#header .mark {
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #991C1C;
+  color: white;
+}
+
+#header .mark a {
+  height: 16px;
+  margin-left: 5px;
+}
+
+#header::ng-deep fa i {
+  color: grey;
+  -moz-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+ 
+
+ /*# sourceMappingURL= game.component.css.map */

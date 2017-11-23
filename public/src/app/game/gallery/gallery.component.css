@@ -1,0 +1,30 @@
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 18px 15px;
+  margin: -1px 0;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#gallery img {
+  display: block;
+  height: 50%;
+  width: 50%;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  -moz-transition: filter 200ms ease-in-out;
+  -o-transition: filter 200ms ease-in-out;
+  -webkit-transition: filter 200ms ease-in-out;
+  transition: filter 200ms ease-in-out;
+}
+
+#gallery img:hover {
+  filter: brightness(110%);
+}
+ 
+
+ /*# sourceMappingURL= gallery.component.css.map */

@@ -1,0 +1,12 @@
+<div id="gallery">
+  <img
+    *ngFor="let image of gameService.game.meta.image; let i = index"
+    (click)="onImageClicked(i)"
+    src="{{ image }}"
+    alt="Screenshot {{ i + 1 }}">
+</div>
+<app-diaporama
+  *ngIf="isImageClicked"
+  (isClosed)="isImageClicked = false"
+  [gallery]="gameService.game.meta.image"
+  [clickedImageIndex]="clickedImageIndex"></app-diaporama>
