@@ -1,0 +1,268 @@
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px lightgrey;
+  z-index: 1;
+}
+
+header .logoandsearch {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+}
+
+header .logoandsearch form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+header .logoandsearch form input, header .logoandsearch form button {
+  padding: 10px;
+  border: none;
+}
+
+header .logoandsearch form input {
+  border-radius: 5px 0 0 5px;
+}
+
+header .logoandsearch form button {
+  border-left: thin solid lightgrey;
+  border-radius: 0 5px 5px 0;
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+header .logoandsearch form button:hover {
+  background-color: #ededed;
+}
+
+header .logoandsearch a {
+  height: 48px;
+  margin: 0 10px;
+}
+
+header #triggersWrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+header #triggersWrapper a {
+  padding: 20px 10px;
+  background-color: white;
+  white-space: nowrap;
+  -moz-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+header #triggersWrapper a:hover {
+  background-color: #f2f2f2;
+}
+
+header #triggersWrapper #dropdownTrigger {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "horizontal";
+  -moz-box-orient: "horizontal";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  background-color: white;
+  cursor: pointer;
+  -moz-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+header #triggersWrapper #dropdownTrigger p {
+  padding: 5px;
+}
+
+header #triggersWrapper #dropdownTrigger p span {
+  -moz-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+header #triggersWrapper #dropdownTrigger img {
+  height: 65%;
+  border-radius: 90px;
+}
+
+header #triggersWrapper #dropdownTrigger #dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: "vertical";
+  -moz-box-orient: "vertical";
+  -webkit-box-direction: "normal";
+  -moz-box-direction: "normal";
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  width: calc(100%);
+  border-top: 1px solid lightgrey;
+  border-radius: 0 0 2px 2px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px grey;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: -1;
+}
+
+header #triggersWrapper #dropdownTrigger #dropdown a {
+  width: 100%;
+  padding: 0;
+  background-color: white;
+  text-align: right;
+  -moz-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+header #triggersWrapper #dropdownTrigger #dropdown a p {
+  margin: 5px;
+  -moz-transition: color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+header #triggersWrapper #dropdownTrigger #dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+header #triggersWrapper #dropdownTrigger #dropdown a:hover p {
+  color: darkred;
+}
+
+header #triggersWrapper #dropdownTrigger #dropdown.triggered {
+  visibility: visible;
+}
+
+header #triggersWrapper #dropdownTrigger:hover {
+  background-color: #f2f2f2;
+}
+
+header #triggersWrapper #dropdownTrigger:hover p span {
+  color: darkred;
+}
+
+main {
+  position: relative;
+  top: 60px;
+  max-width: 1180px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgrey;
+  z-index: 0;
+}
+ 
+
+ /*# sourceMappingURL= app.component.css.map */

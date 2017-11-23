@@ -1,0 +1,46 @@
+.reply {
+  position: relative;
+  min-height: 58px;
+}
+
+.reply app-reply {
+  position: absolute;
+  left: 68px;
+}
+
+.reply div {
+  margin: 0 10px 0 68px;
+  overflow: hidden;
+}
+
+.reply div a {
+  font-weight: bold;
+}
+
+.reply div p::ng-deep p {
+  margin-bottom: 5px;
+}
+
+.reply div p::ng-deep p:last-child {
+  margin-bottom: 10px;
+}
+
+.reply div p::ng-deep a {
+  color: #8b1010;
+}
+
+.reply div p::ng-deep img {
+  display: block;
+  max-width: 100%;
+}
+
+.reply .profilePicture {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 1px lightgrey;
+}
+ 
+
+ /*# sourceMappingURL= reply.component.css.map */

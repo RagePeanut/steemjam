@@ -1,0 +1,25 @@
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 15px 20px;
+}
+
+#gallery img {
+  display: block;
+  height: 49.9%;
+  width: 49.9%;
+  padding: 0.1% 0;
+  filter: brightness(100%);
+  -moz-transition: filter 200ms ease-in-out;
+  -o-transition: filter 200ms ease-in-out;
+  -webkit-transition: filter 200ms ease-in-out;
+  transition: filter 200ms ease-in-out;
+}
+
+#gallery img:hover {
+  filter: brightness(110%);
+}
+ 
+
+ /*# sourceMappingURL= gallery.component.css.map */

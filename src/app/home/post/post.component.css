@@ -1,0 +1,88 @@
+.post {
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px lightgrey;
+  background-color: white;
+}
+
+.post h1 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #f2f2f2;
+  background-color: #8b1010;
+}
+
+.post p {
+  position: relative;
+  max-height: 140px;
+  margin: 0 10px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.post p:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #8b1010;
+  background: linear-gradient(transparent, white);
+}
+
+.post p:hover:after {
+  content: '\2b9f';
+}
+
+.post p.expanded {
+  max-height: 100%;
+}
+
+.post p.expanded:after {
+  background: transparent;
+}
+
+.post p.expanded:hover:after {
+  content: '\2b9d';
+}
+
+.post p::ng-deep p {
+  margin-bottom: 5px;
+}
+
+.post p::ng-deep p:last-child {
+  margin-bottom: 10px;
+}
+
+.post p::ng-deep a {
+  color: #8b1010;
+}
+
+.post p::ng-deep img {
+  max-width: 100%;
+}
+
+.post .interactions {
+  display: flex;
+  line-height: 30px;
+  text-align: center;
+}
+
+.post .interactions a {
+  width: 33.333%;
+  width: calc(100% / 3);
+  color: #f2f2f2;
+  background-color: #8b1010;
+}
+
+.post .comments {
+  padding: 10px 0;
+}
+ 
+
+ /*# sourceMappingURL= post.component.css.map */

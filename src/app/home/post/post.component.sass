@@ -1,0 +1,63 @@
+@import "../../../_variables.sass"
+
+.post
+	margin-bottom: 15px
+	box-shadow: 0 0 10px lightgrey
+	background-color: $white
+	//$body
+	h1
+		padding: 10px
+		font-size: 20px
+		font-weight: 400
+		color: $white-hover
+		background-color: $red
+		//old: #ef7171
+	p
+		position: relative
+		max-height: 140px
+		margin: 0 10px
+		padding: 10px 0
+		overflow: hidden
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 30px
+			width: 100%
+			line-height: 30px
+			text-align: center
+			font-size: 25px
+			font-weight: 600
+			color: $red
+			background: linear-gradient(transparent, $white)
+		&:hover
+			&:after
+				content: '\2b9f'
+		&.expanded
+			max-height: 100%
+			&:after
+				background: transparent
+			&:hover
+				&:after
+					content: '\2b9d'
+		&::ng-deep
+			p
+				margin-bottom: 5px
+				&:last-child
+					margin-bottom: 10px
+			a
+				color: $red
+			img
+				max-width: 100%
+	.interactions
+		display: flex
+		line-height: 30px
+		text-align: center
+		a
+			width: 33.333%
+			width: calc(100% / 3)
+			color: $white-hover
+			background-color: $red
+	.comments
+		padding: 10px 0

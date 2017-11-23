@@ -1,0 +1,24 @@
+p {
+  padding: 0 20px 15px 20px;
+}
+
+p::ng-deep a {
+  color: #8b1010;
+}
+
+p::ng-deep hr {
+  margin: 0 10%;
+  border: none;
+  border-bottom: thin solid #8b1010;
+}
+
+p::ng-deep center {
+  text-align: left;
+}
+
+p::ng-deep .text-justify {
+  text-align: justify;
+}
+ 
+
+ /*# sourceMappingURL= about.component.css.map */
